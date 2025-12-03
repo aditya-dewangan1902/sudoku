@@ -1,54 +1,64 @@
-🧩 Sudoku Game in C
+````md
+# 🧩 Sudoku Game in C
 
-A console-based Sudoku game where the user fills empty cells in a predefined 9×9 puzzle and the game checks move validity and puzzle completion.
+A console-based Sudoku game where the user fills empty cells in a predefined **9×9** puzzle and the game checks move validity and puzzle completion.
 
-Features
+---
 
-Pre-loaded Puzzle: Starts with a fixed Sudoku grid.
+## ✨ Features
+- **Pre-loaded Puzzle**: Starts with a fixed Sudoku grid  
+- **Move Validation**: Ensures rules for row, column, and 3×3 sub-grid  
+- **Immutable Fixed Cells**: Original numbers cannot be changed  
+- **Live Board Updates**: Board refreshes after every move  
+- **Completion Detection**: Announces when solved  
+- **Exit Option**: Quit anytime using `0 0 0`
 
-Move Validation: Checks validity against row, column, and 3×3 sub-grid rules.
+---
 
-Immutable Fixed Cells: Prevents editing the original puzzle numbers.
+## 🛠 Build & Run
 
-Live Board Updates: clear display of the board after every move.
-
-Completion Detection: Detects and announces when the puzzle is solved.
-
-Exit Option: Quit anytime using 0 0 0.
-
-Build & Run
-
-Linux / macOS
-
+### Linux / macOS
+```sh
 gcc src/sudoku.c -o sudoku
 ./sudoku
+````
 
+### Windows (MinGW)
 
-Windows (MinGW)
-
+```sh
 gcc src/sudoku.c -o sudoku.exe
 sudoku.exe
+```
 
+---
 
-Controls
+## 🎮 Controls
 
-Input format:
+**Input Format**
 
+```
 row col value
+```
 
+**Example**
 
-Example:
-
+```
 3 4 7
+```
 
+(Places number **7** in row **3**, column **4**)
 
-(Places the number 7 in row 3, column 4)
+**Exit Game**
 
-Exit Game:
-
+```
 0 0 0
+```
 
+---
 
-Author
+## 👤 Author
 
-Aditya Dewangan
+**Aditya Dewangan**
+
+```
+```
